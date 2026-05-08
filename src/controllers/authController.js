@@ -1,7 +1,7 @@
 const authService = require("../services/authService");
-const getLogin = (req, res) => {
-  return res.render("login.ejs");
-};
+// const getLogin = (req, res) => {
+//   return res.render("login.ejs");
+// };
 const login = async (req, res) => {
   try {
     const { identifier, password } = req.body;

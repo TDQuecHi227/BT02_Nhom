@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node test-runner.js",
     "start": "node --exec babel-node ./src/main.js",
     "dev": "nodemon --exec babel-node ./src/main.js"
   },
@@ -27,6 +27,7 @@
     "@babel/core": "^7.29.0",
     "@babel/node": "^7.29.0",
     "@babel/preset-env": "^7.29.5",
+    "newman": "^6.2.2",
     "nodemon": "^3.1.14"
   }
 }

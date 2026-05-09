@@ -10,4 +10,19 @@ const validateLogin = (req, res, next) => {
   next();
 };
 
-module.exports = { validateLogin };
+const validateProfileUpdate = (req, res, next) => {
+  const allowedFields = ["fullName", "avatarUrl", "bio", "phoneNumber"];
+  const hasAllowedField = allowedFields.some((field) => {
+    return Object.prototype.hasOwnProperty.call(req.body, field);
+  });
+
+  if (!hasAllowedField) {
+    return res.status(400).json({
+      message: "Vui lòng cung cấp ít nhất một trường profile hợp lệ.",
+    });
+  }
+
+  next();
+};
+
+module.exports = { validateLogin, validateProfileUpdate };

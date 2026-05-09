@@ -1,0 +1,31 @@
+{
+  "method": "PUT",
+  "url": "{{baseUrl}}/user/profile",
+  "headers": {
+    "Content-Type": "application/json",
+    "Cookie": "jwt={{jwt_user}}"
+  },
+  "body": {
+    "fullName": "Nguyen Van A",
+    "avatarUrl": "https://example.com/avatar.png",
+    "bio": "Sinh vien CNTT",
+    "phoneNumber": "0123456789"
+  },
+  "message": {
+    "message": "Cập nhật profile thành công",
+    "data": {
+      "userId": "{{userId}}",
+      "username": "thangnguyen",
+      "email": "thang@example.com",
+      "role": "user",
+      "profile": {
+        "fullName": "Nguyen Van A",
+        "avatarUrl": "https://example.com/avatar.png",
+        "bio": "Sinh vien CNTT",
+        "phoneNumber": "0123456789"
+      },
+      "createdAt": "{{createdAt}}",
+      "updatedAt": "{{updatedAt}}"
+    }
+  }
+}

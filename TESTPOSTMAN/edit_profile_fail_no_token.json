@@ -1,0 +1,11 @@
+{
+  "method": "PUT",
+  "url": "{{baseUrl}}/user/profile",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "fullName": "Test Unauthorized"
+  },
+  "message": "Bạn chưa đăng nhập hoặc phiên làm việc đã kết thúc."
+}

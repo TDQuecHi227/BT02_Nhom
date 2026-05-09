@@ -1,0 +1,12 @@
+{
+  "method": "PUT",
+  "url": "{{baseUrl}}/user/profile",
+  "headers": {
+    "Content-Type": "application/json",
+    "Cookie": "jwt={{jwt_deleted_user}}"
+  },
+  "body": {
+    "fullName": "Test Missing User"
+  },
+  "message": "Không tìm thấy người dùng."
+}

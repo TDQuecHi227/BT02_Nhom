@@ -1,0 +1,31 @@
+{
+  "method": "PUT",
+  "url": "{{baseUrl}}/admin/profile",
+  "headers": {
+    "Content-Type": "application/json",
+    "Cookie": "jwt={{jwt_admin}}"
+  },
+  "body": {
+    "fullName": "Admin User",
+    "avatarUrl": "https://example.com/admin-avatar.png",
+    "bio": "Quan tri he thong",
+    "phoneNumber": "0987654321"
+  },
+  "message": {
+    "message": "Cập nhật profile thành công",
+    "data": {
+      "userId": "{{userId}}",
+      "username": "admin_master",
+      "email": "admin@flashcard.com",
+      "role": "admin",
+      "profile": {
+        "fullName": "Admin User",
+        "avatarUrl": "https://example.com/admin-avatar.png",
+        "bio": "Quan tri he thong",
+        "phoneNumber": "0987654321"
+      },
+      "createdAt": "{{createdAt}}",
+      "updatedAt": "{{updatedAt}}"
+    }
+  }
+}

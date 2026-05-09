@@ -1,0 +1,12 @@
+{
+  "method": "PUT",
+  "url": "{{baseUrl}}/admin/profile",
+  "headers": {
+    "Content-Type": "application/json",
+    "Cookie": "jwt={{jwt_user}}"
+  },
+  "body": {
+    "fullName": "Test Forbidden"
+  },
+  "message": "Forbidden: Bạn không có quyền truy cập tài nguyên này."
+}

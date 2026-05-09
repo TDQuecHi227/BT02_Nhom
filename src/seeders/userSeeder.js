@@ -43,6 +43,18 @@ const seedUsers = async () => {
           bio: "Học sinh lớp 12, mục tiêu IELTS 7.0",
         },
       },
+      // ← USER TEST: Thay EMAIL_CUA_BAN bằng email thật để nhận OTP
+      {
+        username: "testuser",
+        email: "caov19661@gmail.com",
+        password: hashedPassword,
+        role: "user",
+        isVerified: true,
+        profile: {
+          fullName: "Test User",
+          bio: "Tài khoản dùng để test OTP",
+        },
+      },
     ];
 
     // Đẩy dữ liệu vào DB

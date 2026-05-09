@@ -1,0 +1,12 @@
+{
+  "method": "PUT",
+  "url": "{{baseUrl}}/user/profile",
+  "headers": {
+    "Content-Type": "application/json",
+    "Cookie": "jwt=invalid.token.value"
+  },
+  "body": {
+    "fullName": "Test Forbidden"
+  },
+  "message": "Token không hợp lệ hoặc đã hết hạn."
+}

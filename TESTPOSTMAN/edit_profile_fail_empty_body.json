@@ -1,0 +1,10 @@
+{
+  "method": "PUT",
+  "url": "{{baseUrl}}/user/profile",
+  "headers": {
+    "Content-Type": "application/json",
+    "Cookie": "jwt={{jwt_user}}"
+  },
+  "body": {},
+  "message": "Vui lòng cung cấp ít nhất một trường profile hợp lệ."
+}
